@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visulalizer</title>
+    <script src="sort.js"></script>
+    <style>
+        .tower {
+            width: 20px;
+            display: inline-block;
+            margin: 0 1px;
+            background-color: black;
+            transition: height 100ms ease-in;
+        }
+        #array-box {
+            margin-top: 64px;
+            min-height: 600px;
+            padding: 32px;
+            position:absolute;
+            top:30%;
+        }
+        .header_top{
+          position:absolute;
+          left:41%;
+        }
+        .header_bottom{
+          position:absolute;
+          top:12%;
+          left:42%
+        }
+        body{
+          background-color: antiquewhite;
+        }
+        .options{
+          position:absolute;
+          top:20%;
+          left:5%;
+
+        }
+        .btn{
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: rgb(17, 12, 12);
+          background-color: #a83232;
+          border: none;
+          border-radius: 15px;
+        }
+        #array-size{
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: rgb(17, 12, 12);
+          background-color: #a83232;
+          border: none;
+          border-radius: 15px;
+        }
+        #search-number{
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: rgb(17, 12, 12);
+          background-color: #a83232;
+          border: none;
+          border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header_top">Algorithm Visualizer</h1>
+    <h3 class="header_bottom">Developed By Kanishka Kumar</h3>
+    <div class="options">
+        <input type="number"  id="array-size" placeholder="Number Should Be >=2"/>
+        <input type="number"  id="search-number" placeholder="Enter number for search"/>
+        <button id="generatearray" class="btn" onclick="generateArray()">Generate Array</button>
+        <button id="linearsearch" class="btn" onclick="doLinearSearch()">Linear Search</button>
+        <button id="binarysearch" class="btn" onclick="doBinarySearch()">Binary Search</button>
+        <button id="bubblesort" class="btn" onclick="doBubbleSort()">Bubble Sort</button>
+        <button id="selectionsort" class="btn" onclick="doSelectionSort()">Selection Sort</button>
+    </div>
+    <div id="array-box">
+    </div>
+</body>
+</html>
